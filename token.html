@@ -1,0 +1,22 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>直播防盗链计算</title>
+  <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+  <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<h1>直播拉流计算</h1>
+<hr>
+<form action="token.php" method="post">
+<label for="name">请输入需要计算的完整URL:</label>
+<input class="form-control" type="text" name="domain" placeholder="请输入URL，例如:http://test.v0.v5linux.com">
+<label for="name">请输入app和流名称</label>
+<input class="form-control" type="text" name="path" placeholder="请输入path，例如:/live/test.m3u8">
+<label for="name">token密钥:</label>
+<input  class="form-control" type="text" name="key" placeholder="token密钥请到后台获取">
+<input type="submit" class="btn btn-default" value="计算Token">
+</form>
+</body>
+</html>
