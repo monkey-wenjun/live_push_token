@@ -1,0 +1,30 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>直播防盗链计算</title>
+  <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+  <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<h1>直播推流token计算</h1>
+<hr>
+<form action="live_push_token.php" method="post">
+<label for="name">推流域名:</label>
+<input class="form-control" type="text" name="domain" placeholder="请输入推流的域名，例如:test.v0.v5linux.com">
+<label for="name">app名称:</label> 
+<input class="form-control" type="text" name="live" placeholder="请输入app名称,例如:live">
+<label for="name">流名称:</label> 
+<input class="form-control" type="text" name="stream" placeholder="请输入流名称，例如:stream">
+<label for="name">token密钥:</label>
+<input  class="form-control" type="text" name="secret" placeholder="token密钥请到后台获取">
+<label for="name">有效时间:</label>
+<input  class="form-control" type="text" name="valid_ts" placeholder="有效时间必须大于当前时间，默认当前时间的Unix时间戳+60">
+<label for="name">截止时间:</label>
+<input  class="form-control" type="text" name="expired_ts" placeholder="过期时间必须大于当前时间，默认是当前时间的Unix时间戳+86400">
+<input type="submit" class="btn btn-default" value="计算Token">
+</form>
+</body>
+</html>
+
+
